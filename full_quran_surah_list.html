@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f4f6;
+            color: #333;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .parah {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .parah li {
+            background: #ffffff;
+            margin: 10px 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .parah li:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transform: scale(1.02);
+        }
+        .parah li.selected {
+            background-color: #e6f7ff;
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .english {
+            font-size: 16px;
+            text-align: left;
+            flex: 1;
+        }
+        .arabic {
+            font-size: 18px;
+            text-align: right;
+            color: #666;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Surah List</h1>
+    </div>
+    <div class="container">
+        <ul class="parah" id="parahList">
+
+            <li tabindex="0">
+                <span class="english">1. Al-Fatiha</span>
+                <span class="arabic">1 - سورة Al-Fatiha</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">2. Al-Baqarah</span>
+                <span class="arabic">2 - سورة Al-Baqarah</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">3. Aal-E-Imran</span>
+                <span class="arabic">3 - سورة Aal-E-Imran</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">4. An-Nisa</span>
+                <span class="arabic">4 - سورة An-Nisa</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">5. Al-Maidah</span>
+                <span class="arabic">5 - سورة Al-Maidah</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">6. Al-An'am</span>
+                <span class="arabic">6 - سورة Al-An'am</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">7. Al-A'raf</span>
+                <span class="arabic">7 - سورة Al-A'raf</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">8. Al-Anfal</span>
+                <span class="arabic">8 - سورة Al-Anfal</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">9. At-Tawbah</span>
+                <span class="arabic">9 - سورة At-Tawbah</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">10. Yunus</span>
+                <span class="arabic">10 - سورة Yunus</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">11. Hud</span>
+                <span class="arabic">11 - سورة Hud</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">12. Yusuf</span>
+                <span class="arabic">12 - سورة Yusuf</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">13. Ar-Ra'd</span>
+                <span class="arabic">13 - سورة Ar-Ra'd</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">14. Ibrahim</span>
+                <span class="arabic">14 - سورة Ibrahim</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">15. Al-Hijr</span>
+                <span class="arabic">15 - سورة Al-Hijr</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">16. An-Nahl</span>
+                <span class="arabic">16 - سورة An-Nahl</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">17. Al-Isra</span>
+                <span class="arabic">17 - سورة Al-Isra</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">18. Al-Kahf</span>
+                <span class="arabic">18 - سورة Al-Kahf</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">19. Maryam</span>
+                <span class="arabic">19 - سورة Maryam</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">20. Taha</span>
+                <span class="arabic">20 - سورة Taha</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">21. Al-Anbiya</span>
+                <span class="arabic">21 - سورة Al-Anbiya</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">22. Al-Hajj</span>
+                <span class="arabic">22 - سورة Al-Hajj</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">23. Al-Mu'minun</span>
+                <span class="arabic">23 - سورة Al-Mu'minun</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">24. An-Nur</span>
+                <span class="arabic">24 - سورة An-Nur</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">25. Al-Furqan</span>
+                <span class="arabic">25 - سورة Al-Furqan</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">26. Ash-Shu'ara</span>
+                <span class="arabic">26 - سورة Ash-Shu'ara</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">27. An-Naml</span>
+                <span class="arabic">27 - سورة An-Naml</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">28. Al-Qasas</span>
+                <span class="arabic">28 - سورة Al-Qasas</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">29. Al-Ankabut</span>
+                <span class="arabic">29 - سورة Al-Ankabut</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">30. Ar-Rum</span>
+                <span class="arabic">30 - سورة Ar-Rum</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">31. Luqman</span>
+                <span class="arabic">31 - سورة Luqman</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">32. As-Sajda</span>
+                <span class="arabic">32 - سورة As-Sajda</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">33. Al-Ahzab</span>
+                <span class="arabic">33 - سورة Al-Ahzab</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">34. Saba</span>
+                <span class="arabic">34 - سورة Saba</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">35. Fatir</span>
+                <span class="arabic">35 - سورة Fatir</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">36. Ya-Sin</span>
+                <span class="arabic">36 - سورة Ya-Sin</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">37. As-Saffat</span>
+                <span class="arabic">37 - سورة As-Saffat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">38. Sad</span>
+                <span class="arabic">38 - سورة Sad</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">39. Az-Zumar</span>
+                <span class="arabic">39 - سورة Az-Zumar</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">40. Ghafir</span>
+                <span class="arabic">40 - سورة Ghafir</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">41. Fussilat</span>
+                <span class="arabic">41 - سورة Fussilat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">42. Ash-Shura</span>
+                <span class="arabic">42 - سورة Ash-Shura</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">43. Az-Zukhruf</span>
+                <span class="arabic">43 - سورة Az-Zukhruf</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">44. Ad-Dukhan</span>
+                <span class="arabic">44 - سورة Ad-Dukhan</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">45. Al-Jathiya</span>
+                <span class="arabic">45 - سورة Al-Jathiya</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">46. Al-Ahqaf</span>
+                <span class="arabic">46 - سورة Al-Ahqaf</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">47. Muhammad</span>
+                <span class="arabic">47 - سورة Muhammad</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">48. Al-Fath</span>
+                <span class="arabic">48 - سورة Al-Fath</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">49. Al-Hujurat</span>
+                <span class="arabic">49 - سورة Al-Hujurat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">50. Qaf</span>
+                <span class="arabic">50 - سورة Qaf</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">51. Adh-Dhariyat</span>
+                <span class="arabic">51 - سورة Adh-Dhariyat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">52. At-Tur</span>
+                <span class="arabic">52 - سورة At-Tur</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">53. An-Najm</span>
+                <span class="arabic">53 - سورة An-Najm</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">54. Al-Qamar</span>
+                <span class="arabic">54 - سورة Al-Qamar</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">55. Ar-Rahman</span>
+                <span class="arabic">55 - سورة Ar-Rahman</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">56. Al-Waqia</span>
+                <span class="arabic">56 - سورة Al-Waqia</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">57. Al-Hadid</span>
+                <span class="arabic">57 - سورة Al-Hadid</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">58. Al-Mujadila</span>
+                <span class="arabic">58 - سورة Al-Mujadila</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">59. Al-Hashr</span>
+                <span class="arabic">59 - سورة Al-Hashr</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">60. Al-Mumtahina</span>
+                <span class="arabic">60 - سورة Al-Mumtahina</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">61. As-Saff</span>
+                <span class="arabic">61 - سورة As-Saff</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">62. Al-Jumua</span>
+                <span class="arabic">62 - سورة Al-Jumua</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">63. Al-Munafiqun</span>
+                <span class="arabic">63 - سورة Al-Munafiqun</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">64. At-Taghabun</span>
+                <span class="arabic">64 - سورة At-Taghabun</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">65. At-Talaq</span>
+                <span class="arabic">65 - سورة At-Talaq</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">66. At-Tahrim</span>
+                <span class="arabic">66 - سورة At-Tahrim</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">67. Al-Mulk</span>
+                <span class="arabic">67 - سورة Al-Mulk</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">68. Al-Qalam</span>
+                <span class="arabic">68 - سورة Al-Qalam</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">69. Al-Haqqa</span>
+                <span class="arabic">69 - سورة Al-Haqqa</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">70. Al-Maarij</span>
+                <span class="arabic">70 - سورة Al-Maarij</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">71. Nuh</span>
+                <span class="arabic">71 - سورة Nuh</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">72. Al-Jinn</span>
+                <span class="arabic">72 - سورة Al-Jinn</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">73. Al-Muzzammil</span>
+                <span class="arabic">73 - سورة Al-Muzzammil</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">74. Al-Muddaththir</span>
+                <span class="arabic">74 - سورة Al-Muddaththir</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">75. Al-Qiyama</span>
+                <span class="arabic">75 - سورة Al-Qiyama</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">76. Al-Insan</span>
+                <span class="arabic">76 - سورة Al-Insan</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">77. Al-Mursalat</span>
+                <span class="arabic">77 - سورة Al-Mursalat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">78. An-Naba</span>
+                <span class="arabic">78 - سورة An-Naba</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">79. An-Naziat</span>
+                <span class="arabic">79 - سورة An-Naziat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">80. Abasa</span>
+                <span class="arabic">80 - سورة Abasa</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">81. At-Takwir</span>
+                <span class="arabic">81 - سورة At-Takwir</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">82. Al-Infitar</span>
+                <span class="arabic">82 - سورة Al-Infitar</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">83. Al-Mutaffifin</span>
+                <span class="arabic">83 - سورة Al-Mutaffifin</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">84. Al-Inshiqaq</span>
+                <span class="arabic">84 - سورة Al-Inshiqaq</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">85. Al-Burooj</span>
+                <span class="arabic">85 - سورة Al-Burooj</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">86. At-Tariq</span>
+                <span class="arabic">86 - سورة At-Tariq</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">87. Al-Ala</span>
+                <span class="arabic">87 - سورة Al-Ala</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">88. Al-Ghashiya</span>
+                <span class="arabic">88 - سورة Al-Ghashiya</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">89. Al-Fajr</span>
+                <span class="arabic">89 - سورة Al-Fajr</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">90. Al-Balad</span>
+                <span class="arabic">90 - سورة Al-Balad</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">91. Ash-Shams</span>
+                <span class="arabic">91 - سورة Ash-Shams</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">92. Al-Lail</span>
+                <span class="arabic">92 - سورة Al-Lail</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">93. Ad-Duha</span>
+                <span class="arabic">93 - سورة Ad-Duha</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">94. Ash-Sharh</span>
+                <span class="arabic">94 - سورة Ash-Sharh</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">95. At-Tin</span>
+                <span class="arabic">95 - سورة At-Tin</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">96. Al-Alaq</span>
+                <span class="arabic">96 - سورة Al-Alaq</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">97. Al-Qadr</span>
+                <span class="arabic">97 - سورة Al-Qadr</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">98. Al-Bayyina</span>
+                <span class="arabic">98 - سورة Al-Bayyina</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">99. Az-Zalzala</span>
+                <span class="arabic">99 - سورة Az-Zalzala</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">100. Al-Adiyat</span>
+                <span class="arabic">100 - سورة Al-Adiyat</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">101. Al-Qaria</span>
+                <span class="arabic">101 - سورة Al-Qaria</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">102. At-Takathur</span>
+                <span class="arabic">102 - سورة At-Takathur</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">103. Al-Asr</span>
+                <span class="arabic">103 - سورة Al-Asr</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">104. Al-Humaza</span>
+                <span class="arabic">104 - سورة Al-Humaza</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">105. Al-Fil</span>
+                <span class="arabic">105 - سورة Al-Fil</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">106. Quraish</span>
+                <span class="arabic">106 - سورة Quraish</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">107. Al-Ma'un</span>
+                <span class="arabic">107 - سورة Al-Ma'un</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">108. Al-Kawthar</span>
+                <span class="arabic">108 - سورة Al-Kawthar</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">109. Al-Kafiroon</span>
+                <span class="arabic">109 - سورة Al-Kafiroon</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">110. An-Nasr</span>
+                <span class="arabic">110 - سورة An-Nasr</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">111. Al-Masad</span>
+                <span class="arabic">111 - سورة Al-Masad</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">112. Al-Ikhlas</span>
+                <span class="arabic">112 - سورة Al-Ikhlas</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">113. Al-Falaq</span>
+                <span class="arabic">113 - سورة Al-Falaq</span>
+            </li>
+
+            <li tabindex="0">
+                <span class="english">114. An-Nas</span>
+                <span class="arabic">114 - سورة An-Nas</span>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
